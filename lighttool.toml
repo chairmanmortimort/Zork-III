@@ -1,0 +1,15 @@
+[tool]
+id = "com.thelightphone.zork3"
+label = "Zork III"
+versionCode = 1
+versionName = "1.0.0"
+permissions = []
+# Emulator by default; flip to "com.lightos" when building for real hardware.
+serverPackage = "com.thelightphone.sdk.emulator"
+
+[tool.metadata]
+# Zork III: The Dungeon Master
+# Based on the Infocom Z-machine interpreter and the open-source
+# Zork III story file from https://github.com/historicalsource/zork3
+# This is a self-contained Z-machine v3 interpreter written in Kotlin
+# with no network dependencies, matching Light's no-runtime-dependency ethos.
