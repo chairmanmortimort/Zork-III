@@ -1,0 +1,9 @@
+[tool]
+id          = "com.thelightphone.zork3"
+label       = "Zork III"
+versionCode = 2
+versionName = "1.1.0"
+permissions = []
+orientation = "portrait"
+# Target the real Light Phone III (LightOS).
+serverPackage = "com.lightos"
