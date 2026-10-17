@@ -13,5 +13,5 @@ Light Tool Library metadata - paste into the **Add Tool** form.
 - [ ] Public repo created
 - [ ] >=1 screenshot added (required for approval)
 - [ ] Description <= 255 chars
-- [ ] versionCode bumped (2)
-- [ ] Built with the latest light-sdk
+- [ ] versionCode bumped (3)
+- [ ] Built with the latest light-sdk (v0.2.0)
