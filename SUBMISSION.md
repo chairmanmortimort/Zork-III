@@ -5,7 +5,7 @@ Light Tool Library metadata - paste into the **Add Tool** form.
 | Field | Value |
 |---|---|
 | **Title** | Zork III |
-| **GitHub Repo** | https://github.com/<you>/zork3-light |
+| **GitHub Repo** | https://github.com/chairmanmortimort/Zork-III |
 | **Description** | Zork III (1983), the classic text adventure concludes. Journey across the mountains to the ruins of the Dark Cave and the dungeon of the Being of Power. |
 | **Tags** | Games *(provisional)* |
 
