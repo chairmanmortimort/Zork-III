@@ -1,7 +1,7 @@
 [tool]
 id          = "com.thelightphone.zork3"
 label       = "Zork III"
-versionCode = 2
+versionCode = 3
 versionName = "1.1.0"
 permissions = []
 orientation = "portrait"
