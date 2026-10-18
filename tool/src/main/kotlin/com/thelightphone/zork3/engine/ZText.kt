@@ -71,14 +71,14 @@ object ZText {
             addr += if (zpc >= 3) 2 else 1
 
             val word = (byte0 shl 8) or byte1
-            // Z-chars are packed MSB-first: z1 = bits 15-11, z2 = bits 10-6,
-            // z3 = bits 5-1 (bit 0 is unused). Bit 7 of byte0 (bit 15 of the
-            // word) is the end-of-string flag AND doubles as z1's top bit.
-            // So on the final (EOS) word, z1 uses only bits 14-11 (4 bits).
+            // Z-chars are packed MSB-first per the Z-machine v3 spec:
+            //   z1 = bits 14-10 (shr 10), z2 = bits 9-5 (shr 5), z3 = bits 4-0 (shr 0).
+            // Bit 7 of byte0 (bit 15 of the word) is the end-of-string flag.
             val eos = (byte0 and 0x80) != 0
             val z1Mask = if (eos) 0x0F else 0x1F
             for (zi in 0 until zpc) {
-                val z = (word shr (11 - zi * 5)) and (if (zi == 0) z1Mask else 0x1F)
+                val shift = when (zi) { 0 -> 10; 1 -> 5; else -> 0 }
+                val z = (word shr shift) and 0x1F
 
                 if (pendingAbbr) {
                     // Collecting the two z-chars that encode the abbreviation number.

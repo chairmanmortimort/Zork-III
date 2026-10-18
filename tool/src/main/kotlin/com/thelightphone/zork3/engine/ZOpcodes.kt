@@ -12,7 +12,7 @@ object ZOpcodes {
     // ── Opcode name tables (index = opcode number) ──
     val ZERO_OP = arrayOf(
         "rtrue", "rfalse", "print", "print_ret", "nop", "save", "restore", "restart",
-        "ret_popped", "pop", "quit", "new_line", "show_status", "?", "verify", "?",
+        "ret_popped", "pop", "quit", "new_line", "show_status", "verify", "?", "?",
         "?", "?", "?", "?", "?", "?", "?", "?", "?", "?", "?", "?", "?", "?", "?", "?"
     )
 
