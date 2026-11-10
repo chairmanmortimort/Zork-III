@@ -29,8 +29,7 @@ class ZorkHomeScreen(sealedActivity: SealedLightActivity) :
         get() = ZorkViewModel::class.java
 
     override fun createViewModel(): ZorkViewModel {
-        val storyBytes = lightContext.readAsset("story/zork3.z3")
-        return ZorkViewModel(lightContext.filesDir, storyBytes)
+        return ZorkViewModel(lightContext.filesDir, StoryData.bytes)
     }
 
     private fun openSaves() {

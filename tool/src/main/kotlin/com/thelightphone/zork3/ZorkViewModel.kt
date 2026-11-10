@@ -14,9 +14,7 @@ import java.io.File
  * of three numbered slots. Slots are loaded/deleted from the top-left Saves
  * menu. The transcript is stored newest-first.
  *
- * Story data is loaded from assets/story/zork3.z3 at init time via the
- * lightContext.readAsset API (set by the host screen before createViewModel
- * is called, or read directly here via a lambda).
+ * Story data is embedded as base64 in StoryData.kt at init time.
  */
 class ZorkViewModel(private val saveDir: File, storyBytes: ByteArray) : LightViewModel<Unit>() {
 
