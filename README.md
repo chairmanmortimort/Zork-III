@@ -46,7 +46,7 @@ Download the release APK from the [Releases](https://github.com/chairmanmortimor
 page and sideload it onto a Light Phone III:
 
 ```
-adb install -r Zork-III-v1.2.0-release.apk
+adb install -r Zork-III-v1.2.1-release.apk
 ```
 
 ## Screenshots

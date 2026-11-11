@@ -3,7 +3,7 @@ package com.thelightphone.zork3
 /** Static content shown on the About page. */
 object AboutText {
     const val TITLE = "Zork III — About"
-    const val VERSION = "1.2.0"
+    const val VERSION = "1.2.1"
 
     const val STORY = """Zork III: The Dungeon Master
 
